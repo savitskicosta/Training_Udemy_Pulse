@@ -4,6 +4,8 @@
 @import "blocks/promo";
 @import "blocks/buttons";
 @import "blocks/advantages";
+@import "blocks/consultation";
+@import "blocks/forms";
 
 * {
 	font-family: "Museo Sans Cyrl", sans-serif;
@@ -19,4 +21,10 @@
 	color: $text-color;
 	font-size: 30px;
 	font-weight: 700;
+	text-transform: uppercase;
+	&_left {
+		color: #fff;
+		font-size: 36px;
+		text-align: left;
+	}
 }
