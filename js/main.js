@@ -44,7 +44,7 @@ $(document).ready(function () {
 			$(".catalog-item__list").eq(i).toggleClass("catalog-item__list_active");
 		});
 	});
-
+	// modal
 	$("[data-modal=consultation]").on("click", function () {
 		$(".overlay, #consultation").fadeIn("slow");
 	});
@@ -53,5 +53,13 @@ $(document).ready(function () {
 	});
 	$(".button_mini").on("click", function () {
 		$(".overlay, #order").fadeIn("slow");
+	});
+	// scroll
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 300) {
+			$(".pageup").fadeIn();
+		} else {
+			$(".pageup").fadeOut();
+		}
 	});
 });
