@@ -62,4 +62,6 @@ $(document).ready(function () {
 			$(".pageup").fadeOut();
 		}
 	});
+	// wowJS
+	new WOW().init();
 });
